@@ -8,9 +8,13 @@ const form = document.getElementById('form');
 console.log(userProfile.name);
 
 form.addEventListener("submit", (event) => {
-    event.preventDefault;
     userProfile.name = document.getElementById('username').value;
-    console.log(userProfile.name);
+    userProfile.birthYear = document.getElementById('birth-year').value;
+
+    console.log(userProfile.name + "\n" + userProfile.birthYear);
+    console.log("User's current age: " + calculateAge());
+
+    event.preventDefault();
 });
 
 function calculateAge() {
