@@ -7,7 +7,7 @@ const userProfile = {
 const form = document.getElementById('form');
 
 form.addEventListener('submit', function(userProfile)) {
-    userProfile.name = 
+    userProfile.name 
 };
 
 function calculateAge() {
